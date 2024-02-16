@@ -4,6 +4,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Header from './componentes/Header.js';
 import Main from './componentes/Main.js';
+import About from './componentes/About.js';
 import './App.css';
 
 function App() {
@@ -22,6 +23,8 @@ function App() {
       <Header />
       {/* Main */}
       <Main />
+      {/* About */}
+      <About />
     </div>
   );
 }

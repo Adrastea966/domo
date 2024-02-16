@@ -53,7 +53,7 @@ a {
 .networks {
     display: flex;
     justify-content: flex-end;
-    background-color: #EFEFEF;
+    background-color: #000;
 }
 
 .networks-list {
@@ -61,7 +61,7 @@ a {
     gap: 2rem;
     font-size: 2em;
     padding: .2rem 3rem 0 0;
-    color: #878787;
+    color: #EFEFEF;
 }
 
 .networks-list li {
@@ -209,8 +209,27 @@ a {
     transform: translate(-50%, -50%);
 }
 
+.text-container button {
+    font-size: 1.8em;
+    width: 15rem;
+    height: 5rem;
+    background-color: #ffffffa2;
+    color:#000;
+    border: transparent;
+    font-weight: 600;
+}
+
+.text-container button svg {
+    transition: .3s ease-in-out;
+}
+
+.text-container button:hover svg {
+    transform: translateX(5px)
+}
+
 .text-container h1 {
     font-size: 5em;
+    padding-bottom: 2rem;
 }
 
 .text-container p {
@@ -308,8 +327,13 @@ a {
 }
 
 .third-info-card {
-    color: #878787;
-    background-color: #EFEFEF;
+    color: #fff;
+    background-color: #000;
+}
+
+.fourth-info-card{
+    background-color: #fff;
+    color:#8b8b8b;
 }
 
 .btn-arrow-go {
@@ -342,7 +366,105 @@ a {
     --bs-gutter-y: 0;
 }
 
-/*Media querys*/
+/*About section -------------------------------------------*/
+/*About*/
+.about {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #EFEFEF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem;
+    gap: 2rem;
+}
+
+.about-container-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-container-text h1 {
+    font-size: 5em;
+    padding-bottom: 5rem;
+    font-weight: 600;
+    z-index: 2;
+    position: relative;
+    width: 30rem;
+    height: 10rem;
+}
+
+.about-container-text h1::before {
+    content: '';
+    width: 0;
+    height: 2rem;
+    background-color: #FFF500;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: expandWidth .8s forwards;
+}
+
+@keyframes expandWidth {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.about-container-text p {
+    font-size: 1.5em;
+    max-width: 50rem;
+    padding-bottom: 3rem;
+}
+
+.about-container-text button {
+    font-size: 1.5em;
+    width: 15rem;
+    height: 5rem;
+    background-color: #000;
+    color:#FFF500;
+    font-weight: 600;
+}
+
+.about-container-text button svg {
+    transition: .3s ease-in-out;
+}
+
+.about-container-text button:hover svg {
+    transform: translateX(5px)
+}
+
+.about-container-image {
+    display: flex;
+    justify-content: center;
+}
+
+.about-container-image img {
+    width: 60rem;
+    filter: grayscale(100%);
+    transition: filter 0.5s ease-in-out;
+}
+
+.about-container-image img:hover {
+    filter: grayscale(0%);
+}
+
+/*Plans section -------------------------------------------*/
+/*Plans*/
+
+
+
+
+
+/*Media querys -------------------------------------------*/
 /*tablet*/
 @media (max-width: 768px) {
     .navbar-list {
@@ -374,18 +496,26 @@ a {
     }
 
     .text-container h1 {
-        display:none;
+        display: none;
     }
-    
+
     .text-container p {
-        display:none;
+        display: none;
     }
-    
+
     .btn-primary {
-       display:none;
+        display: none;
     }
 
     .arrow-down {
-        display:none;
+        display: none;
+    }
+
+    .about {
+        gap: 5rem;
+    }
+
+    .about-container-image img {
+        width: calc(95%);
     }
 }

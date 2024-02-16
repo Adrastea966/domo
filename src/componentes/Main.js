@@ -1,3 +1,4 @@
+//Main
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import { IoIosArrowDown } from "react-icons/io";
@@ -16,7 +17,7 @@ function Main() {
                 <p>We promote the strategy and the solution, we design brands, we develop websites, design UX-UI, create applications,
                     launch campaigns, tell stories, do digital marketing, train teams in deferents platforms and more. In all things, we are
                     focused on solutions for our visionary clients to create experiences that promote your needs for the future of your company.</p>
-                <button className="btn btn-primary">Start</button>
+                <button> <a href='#'>Start </a>  <FaArrowRight /> </button>
             </div>
             <button className="arrow-down"><IoIosArrowDown /></button>
             <div className='main-container'>
