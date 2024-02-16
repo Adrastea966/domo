@@ -1,0 +1,211 @@
+/*Reset css*/
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*Helpers*/
+.container {
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/*Start of the site -------------------------------------------*/
+/*Header*/
+.header {
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 0; 
+    overflow: hidden; 
+    transition: height .6s ease-in-out; 
+}
+
+.header.expanded {
+    height: 15rem; 
+}
+
+.networks {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #EFEFEF;
+}
+
+.networks-list {
+    display: flex;
+    gap:2rem;
+    font-size: 2em;
+    padding: 1rem 3rem 1rem 0;
+}
+
+.networks-list li{
+    transition: .3s ease-in-out;
+}
+
+.networks-list li:hover {
+    transform: translateY(-4px);
+}
+
+.menu{
+    font-size: 3em;
+    display:flex;
+    align-items: center;
+    display:none;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar-list {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    font-weight: 400;
+}
+
+.navbar-list a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 1rem; 
+    font-size: 1.8em;
+}
+
+.about-link,
+.service-link,
+.plans-link,
+.contact-link,
+.faqs-link{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    max-height: 4rem;
+    flex-grow: 1;
+    text-align: center;
+    position: relative; 
+}
+
+.about-link::before,
+.service-link::before,
+.plans-link::before,
+.contact-link::before,
+.faqs-link::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0; 
+    background-color: #FFF500;
+    z-index: -1; 
+    transition: height 0.3s ease-in-out; 
+}
+
+.about-link:hover::before,
+.service-link:hover::before,
+.plans-link:hover::before,
+.contact-link:hover::before,
+.faqs-link:hover::before{
+    height: 40%; 
+}
+
+.btn {
+    width: 10rem;
+    font-size: 1.8em;
+    transition: .2s ease-in-out;
+    font-weight: 400;
+}
+
+.btn:hover {
+    background-color: #FFF500;
+}
+
+.custom-btn {
+    color: #000;
+    border: 2px solid #FFF500;
+}
+
+.logo {
+    width: 5rem;
+    cursor: pointer;
+    animation: logoAnimation .7s ease-out forwards;
+}
+
+.logo2 {
+    width: 5rem;
+    cursor: pointer;
+    animation: logoAnimation .7s ease-out forwards;
+    display:none;
+}
+
+
+@keyframes logoAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/*Media header*/
+/*tablet*/
+@media (max-width: 768px) {
+    .navbar-list{
+        display:none;
+    }
+
+    .logo2{
+        display:block;
+    }
+
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .menu {
+        display:block;
+        margin-right: 1rem; 
+    }
+}
