@@ -809,6 +809,7 @@ body.menu-open .vbp-header-menu-button__svg .bottom {
     width: 15rem;
     font-size: 1.8em;
     padding: 1rem;
+    color:#000;
 }
 
 .form textarea {
@@ -972,7 +973,6 @@ body.menu-open .vbp-header-menu-button__svg .bottom {
     }
 
 }
-
 @media (max-width: 768px) {
 
     .burger {
