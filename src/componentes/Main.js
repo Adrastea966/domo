@@ -56,7 +56,7 @@ function Main() {
             <div className='container-info-cards' id='tips'>
                 <Row xs={1} md={2} lg={4} className='g-4'>
                     <Col>
-                        <div className='first-info-card'>
+                        <div className='first-info-card' data-aos="fade-right">
                             <h2>Branding for your brand</h2>
                             <p>Start enhancing your brand identity with our comprehensive branding services,
                                 where we guide you every step of the way to foster your brand's growth.</p>
@@ -66,7 +66,7 @@ function Main() {
                         </div>
                     </Col>
                     <Col>
-                        <div className='second-info-card'>
+                        <div className='second-info-card'  data-aos="fade-right" data-aos-delay='100'>
                             <h2>How to gain presence?</h2>
                             <p>Explore our blog to stay up to date with the latest design news, our courses, podcasts and more.</p>
                             <div className='btn-arrow-go'>
@@ -75,7 +75,7 @@ function Main() {
                         </div>
                     </Col>
                     <Col>
-                        <div className='third-info-card'>
+                        <div className='third-info-card'  data-aos="fade-right" data-aos-delay='200'>
                             <h2>Avoid mistakes</h2>
                             <p>Join our community on Instagram where we share daily tips on the latest technologies.
                                 Don't let your business fall behind, improve it with us.</p>
@@ -85,7 +85,7 @@ function Main() {
                         </div>
                     </Col>
                     <Col>
-                        <div className='fourth-info-card'>
+                        <div className='fourth-info-card'  data-aos="fade-right" data-aos-delay='300'>
                             <h2>Do you need a website?</h2>
                             <p>Your brand has already gained momentum and you need more
                                 presence in networks. Contact us to start designing your website.</p>

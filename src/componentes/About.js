@@ -8,7 +8,7 @@ function About() {
     return (
         <div className='about' id="about">
            <div className='about-container-text'>
-                <h1>A little of us</h1>
+                <h1  data-aos="fade-right" >A little of us</h1>
                 <p>We create solutions and experiences that attract and engage. In everything, we are focused on solutions for our visionary clients to create experiences that advance their 
                 needs for the future of their company. In addition, we tell stories that connect, implement high-performance digital marketing strategies, and train teams on various technology platforms. </p>
                 <button> <a href='#' target='_blank'>Get started </a>  <FaArrowRight /> </button>
