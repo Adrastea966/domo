@@ -1,8 +1,8 @@
 //About
 import React from 'react';
-import '../App.css';
 import { FaArrowRight } from "react-icons/fa6";
 import ImageAbout from '../img/image-about.jpg';
+import '../App.css';
 
 function About() {
     return (

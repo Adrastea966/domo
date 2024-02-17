@@ -5,6 +5,8 @@ import 'aos/dist/aos.css';
 import Header from './componentes/Header.js';
 import Main from './componentes/Main.js';
 import About from './componentes/About.js';
+import Servicies from './componentes/Services.js';
+import Contact from './componentes/Contact.js';
 import './App.css';
 
 function App() {
@@ -25,6 +27,10 @@ function App() {
       <Main />
       {/* About */}
       <About />
+      {/* Servicies */}
+      <Servicies/>
+      {/* Contact */}
+      <Contact/>
     </div>
   );
 }
