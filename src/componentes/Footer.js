@@ -5,14 +5,14 @@ import { FaInstagram } from "react-icons/fa6";
 import { AiOutlineWhatsApp } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaArrowUp } from "react-icons/fa";
-import { MapContainer, TileLayer, Marker} from 'react-leaflet';
+import { MapContainer, TileLayer, Marker } from 'react-leaflet';
 import { FaRegHeart } from "react-icons/fa";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { GrLocation } from "react-icons/gr";
 import { IoMdPhonePortrait } from "react-icons/io";
 import { MdOutlineWorkOutline } from "react-icons/md";
 import 'leaflet/dist/leaflet.css';
-import {IconMap} from './IconMap';
+import { IconMap } from './IconMap';
 import '../App.css';
 
 function Footer() {
@@ -35,7 +35,7 @@ function Footer() {
                         <MapContainer center={{ lat: -34.668775, lng: -58.6578058 }} zoom={13}>
                             <TileLayer url='https://tile.openstreetmap.org/{z}/{x}/{y}.png'
                                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' />
-                            <Marker position={{lat: -34.6483278, lng: -58.6215016 }} icon={IconMap} /> 
+                            <Marker position={{ lat: -34.6483278, lng: -58.6215016 }} icon={IconMap} />
                         </MapContainer>
                     </div>
                     <div className='footer-container-items'>
