@@ -10,16 +10,24 @@ import ThirdImage from '../img/imagen-carrusel-3.jpg';
 import '../App.css';
 
 function Main() {
+
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+
     return (
-        <div className='main'>
+        <div className='main' id="main">
             <div className='text-container'>
                 <h1>We create solutions</h1>
                 <p>We promote the strategy and the solution, we design brands, we develop websites, design UX-UI, create applications,
                     launch campaigns, tell stories, do digital marketing, train teams in deferents platforms and more. In all things, we are
                     focused on solutions for our visionary clients to create experiences that promote your needs for the future of your company.</p>
-                <button> <a href='#'>Start </a>  <FaArrowRight /> </button>
+                <button> <a href='#' target='_blank'>Start </a>  <FaArrowRight /> </button>
             </div>
-            <button className="arrow-down"><IoIosArrowDown /></button>
+            <button className="arrow-down" onClick={() => scrollToSection('about')}><IoIosArrowDown /></button>
             <div className='main-container'>
                 <Carousel interval={3000}>
                     <Carousel.Item>
@@ -45,7 +53,7 @@ function Main() {
                     </Carousel.Item>
                 </Carousel>
             </div>
-            <div className='container-info-cards'>
+            <div className='container-info-cards' id='tips'>
                 <Row xs={1} md={2} lg={4} className='g-4'>
                     <Col>
                         <div className='first-info-card'>

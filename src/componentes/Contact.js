@@ -9,7 +9,7 @@ function Contact() {
         event.preventDefault();
     };
     return (
-        <div className='contact'>
+        <div className='contact' id="contact">
             <div className='container-contact'>
                 <h1>Contact us</h1>
                 <p> Would you like to enhance your brand and take your business further? Write to us, we will put together 

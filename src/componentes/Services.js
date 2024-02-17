@@ -9,13 +9,13 @@ import '../App.css';
 
 function Servicies() {
     return (
-        <div className='servicies'>
+        <div className='servicies' id="servicies">
             <div className='servicies-container'>
                 <div className='servicies-container-text'>
                     <h1>Our services</h1>
                     <p> we design brands, we develop websites, design UX-UI, create applications, launch campaigns, tell stories,
                         do digital marketing, train teams in deferents platforms and more. </p>
-                    <button> <a href='#'>Get started </a>  <FaArrowRight /> </button>
+                    <button> <a href='#' target='_blank'>Get started </a>  <FaArrowRight /> </button>
                 </div>
             </div>
             <div className='container-card-services'>
@@ -24,7 +24,7 @@ function Servicies() {
                     <img src={ImageDevelop} className="card-img-top" alt="..." />
 
                     <button className='btn-services-get'>
-                        <a>Get service   <FaArrowRight /></a>
+                        <a href='#' target='_blank'>Get service   <FaArrowRight /></a>
                     </button>
 
                 </div>
@@ -34,9 +34,8 @@ function Servicies() {
 
 
                     <button className='btn-services-get'>
-                        <a>Get service   <FaArrowRight /></a>
+                        <a href='#' target='_blank'>Get service  <FaArrowRight /></a>
                     </button>
-
 
                 </div>
                 <div className="card">
@@ -44,7 +43,7 @@ function Servicies() {
                     <img src={ImageBranding} className="card-img-top" alt="..." />
 
                     <button className='btn-services-get'>
-                        <a>Get service   <FaArrowRight /></a>
+                        <a href='#' target='_blank'>Get service   <FaArrowRight /></a>
                     </button>
 
                 </div>
@@ -53,7 +52,7 @@ function Servicies() {
                     <img src={ImageUxUi} className="card-img-top" alt="..." />
 
                     <button className='btn-services-get'>
-                        <a>Get service   <FaArrowRight /></a>
+                        <a href='#' target='_blank'>Get service   <FaArrowRight /></a>
                     </button>
 
                 </div>

@@ -7,6 +7,7 @@ import Main from './componentes/Main.js';
 import About from './componentes/About.js';
 import Servicies from './componentes/Services.js';
 import Contact from './componentes/Contact.js';
+import Footer from './componentes/Footer.js';
 import './App.css';
 
 function App() {
@@ -31,6 +32,8 @@ function App() {
       <Servicies/>
       {/* Contact */}
       <Contact/>
+      {/* Footer */}
+      <Footer/>
     </div>
   );
 }
