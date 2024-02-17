@@ -38,6 +38,7 @@ a {
 /*Header*/
 .navbar {
     width: 100%;
+    height: 25vh;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-wrap: nowrap;
@@ -48,6 +49,7 @@ a {
     position: fixed;
     z-index: 10;
     gap: 2rem;
+    transition: height .6s ease-in-out;
 }
 
 .logo-container {

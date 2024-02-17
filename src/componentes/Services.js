@@ -19,7 +19,7 @@ function Servicies() {
                 </div>
             </div>
             <div className='container-card-services'>
-                <div className="card" data-aos="fade-left">
+                <div className="card" data-aos="fade-right">
                     <h4>Development</h4>
                     <img src={ImageDevelop} className="card-img-top" alt="..." />
 
@@ -28,7 +28,7 @@ function Servicies() {
                     </button>
 
                 </div>
-                <div className="card" data-aos="fade-left" data-aos-delay='100'>
+                <div className="card" data-aos="fade-right" data-aos-delay='100'>
                     <h4>Marketing Digital</h4>
                     <img src={ImageMarketing} className="card-img-top" alt="..." />
 
@@ -38,7 +38,7 @@ function Servicies() {
                     </button>
 
                 </div>
-                <div className="card" data-aos="fade-left" data-aos-delay='200'>
+                <div className="card" data-aos="fade-right" data-aos-delay='200'>
                     <h4>Branding</h4>
                     <img src={ImageBranding} className="card-img-top" alt="..." />
 
@@ -47,7 +47,7 @@ function Servicies() {
                     </button>
 
                 </div>
-                <div className="card" data-aos="fade-left" data-aos-delay='300'>
+                <div className="card" data-aos="fade-right" data-aos-delay='300'>
                     <h4>Ux ui Design</h4>
                     <img src={ImageUxUi} className="card-img-top" alt="..." />
 
